@@ -1,303 +1,426 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles/bootstrap.min.css" />
+    <title>Clint-metro</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./styles/bootstrap.min.css" />
-  <title>Clint-metro</title>
-</head>
+  <body>
+    <!-- Header Section Starts -->
+    <header>
+      <nav
+        style="width: 95%"
+        class="shadow-lg p-3 mb-5 bg-body rounded mx-auto navbar navbar-expand-lg navbar-light bg-light"
+      >
+        <div class="container-fluid">
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarTogglerDemo03"
+            aria-controls="navbarTogglerDemo03"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <a class="navbar-brand" href="#"
+            ><img
+              src="./images/logo/logo.jpg"
+              alt=""
+              style="width: 50px; height: 40px; border-radius: 5px"
+            />
+            <span class="ps-3">Eventify</span></a
+          >
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About Us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Subscribe</a>
+              </li>
+            </ul>
+            <form class="d-flex">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                <span>Search</span>
+              </button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <!-- Header Section Ends -->
 
-<body>
-  <!-- Header Section Starts -->
-  <header>
-    <nav style="width: 95%"
-      class="shadow-lg p-3 mb-5 bg-body rounded mx-auto navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03"
-          aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <a class="navbar-brand" href="#"><img src="./images/logo/logo.jpg" alt=""
-            style="width: 50px; height: 40px; border-radius: 5px" />
-          <span class="ps-3">Eventify</span></a>
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-          <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About Us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Subscribe</a>
-            </li>
-          </ul>
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
-            <button class="btn btn-outline-success" type="submit">
-              <span>Search</span>
+    <!-- Main Section Starts -->
+    <main class="mb-5 pb-5">
+      <!-- Slider Section Starts -->
+      <section class="slider mx-auto" style="height: 500px; width: 95%">
+        <!-- First content -->
+        <div
+          id="carouselExampleDark"
+          class="carousel carousel-dark slide"
+          data-bs-ride="carousel"
+        >
+          <!-- indicator slider Starts -->
+          <div class="carousel-indicators" style="margin-bottom: -2%">
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="0"
+              class="active"
+              aria-current="true"
+              aria-label="Slide 1"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="1"
+              aria-label="Slide 2"
+            ></button>
+            <button
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide-to="2"
+              aria-label="Slide 3"
+            ></button>
+          </div>
+          <!-- indicator slider Ends -->
+
+          <!-- next and previous button Starts -->
+          <div class="">
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
             </button>
-          </form>
-        </div>
-      </div>
-    </nav>
-  </header>
-  <!-- Header Section Ends -->
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#carouselExampleDark"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <!-- next and previous button Ends -->
 
-  <!-- Main Section Starts -->
-  <main class="mb-5 pb-5">
-    <!-- Slider Section Starts -->
-    <section class="slider mx-auto" style="height: 500px; width: 95%">
-      <!-- First content -->
-      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
-        <!-- indicator slider Starts -->
-        <div class="carousel-indicators" style="margin-bottom: -2%">
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active"
-            aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
-            aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
-            aria-label="Slide 3"></button>
-        </div>
-        <!-- indicator slider Ends -->
-
-        <!-- next and previous button Starts -->
-        <div class="">
-          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-          </button>
-          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-          </button>
-        </div>
-        <!-- next and previous button Ends -->
-
-        <!-- sliding content Starts -->
-        <div class="w-75 mx-auto d-grid">
-          <div>
-            <!-- Item 1 -->
-            <div class="carousel-item active" data-bs-interval="10000">
-              <div class="row">
-                <div
-                  class="col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7 d-flex justify-content-center align-items-center">
-                  <img src="./images/products/9eccdb3c-e965-4ab7-97d2-651c5f5a7fbe.jpg"
-                    style="width: 100%; height: 100%; border-radius: 9px" alt="..." />
-                </div>
-                <div
-                  class="col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 d-flex flex-column justify-content-center align-items-center text-center">
-                  <h5>First slide label</h5>
-                  <p>
-                    Some representative placeholder content for the first
-                    slide.
-                  </p>
-                  <h5>$1200</h5>
-                  <div class="btn bg-danger">
-                    <a style="
+          <!-- sliding content Starts -->
+          <div class="w-75 mx-auto d-grid">
+            <div>
+              <!-- Item 1 -->
+              <div class="carousel-item active" data-bs-interval="10000">
+                <div class="row">
+                  <div
+                    class="col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7 d-flex justify-content-center align-items-center"
+                  >
+                    <img
+                      src="./images/products/9eccdb3c-e965-4ab7-97d2-651c5f5a7fbe.jpg"
+                      style="width: 70%; height: 90%; border-radius: 9px"
+                      alt="..."
+                    />
+                  </div>
+                  <div
+                    class="col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 d-flex flex-column justify-content-center align-items-center text-center"
+                  >
+                    <h5>First slide label</h5>
+                    <p>
+                      Some representative placeholder content for the first
+                      slide.
+                    </p>
+                    <h5>$1200</h5>
+                    <div class="btn bg-danger">
+                      <a
+                        style="
                           text-decoration: none;
                           color: white;
                           font-weight: bolder;
-                        " href=""><span>Buy Now </span><i class="fa fa-cart-arrow-down"></i></a>
+                        "
+                        href=""
+                        ><span>Buy Now </span
+                        ><i class="fa fa-cart-arrow-down"></i
+                      ></a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <!-- Item 2 -->
-            <div class="carousel-item" data-bs-interval="2000">
-              <div class="row pt-3">
-                <div
-                  class="col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7 d-flex justify-content-center align-items-center">
-                  <img src="./images/products/curved-led-tv-250x250.jpg"
-                    style="width: 50%; height: 80%; border-radius: 9px" alt="..." />
-                </div>
-                <div
-                  class="col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 d-flex flex-column justify-content-center align-items-center text-center">
-                  <h5>First slide label</h5>
-                  <p>
-                    Some representative placeholder content for the first
-                    slide.
-                  </p>
-                  <h5>$1200</h5>
-                  <div class="btn bg-danger">
-                    <a style="
+              <!-- Item 2 -->
+              <div class="carousel-item" data-bs-interval="2000">
+                <div class="row pt-3">
+                  <div
+                    class="col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7 d-flex justify-content-center align-items-center"
+                  >
+                    <img
+                      src="./images/products/curved-led-tv-250x250.jpg"
+                      style="width: 50%; height: 80%; border-radius: 9px"
+                      alt="..."
+                    />
+                  </div>
+                  <div
+                    class="col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 d-flex flex-column justify-content-center align-items-center text-center"
+                  >
+                    <h5>First slide label</h5>
+                    <p>
+                      Some representative placeholder content for the first
+                      slide.
+                    </p>
+                    <h5>$1200</h5>
+                    <div class="btn bg-danger">
+                      <a
+                        style="
                           text-decoration: none;
                           color: white;
                           font-weight: bolder;
-                        " href=""><span>Buy Now </span><i class="fa fa-cart-arrow-down"></i></a>
+                        "
+                        href=""
+                        ><span>Buy Now </span
+                        ><i class="fa fa-cart-arrow-down"></i
+                      ></a>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <!-- Item 3 -->
-            <div class="carousel-item">
-              <div class="row pt-5">
-                <div
-                  class="col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7 d-flex justify-content-center align-items-center">
-                  <img src="./images/products/Flagship-Tech_1600x.jpg"
-                    style="width: 90%; height: 100%; border-radius: 9px" alt="..." />
-                </div>
-                <div
-                  class="col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 d-flex flex-column justify-content-center align-items-center text-center">
-                  <h5>First slide label</h5>
-                  <p>
-                    Some representative placeholder content for the first
-                    slide.
-                  </p>
-                  <h5>$1200</h5>
-                  <div class="btn bg-danger">
-                    <a style="
+              <!-- Item 3 -->
+              <div class="carousel-item">
+                <div class="row pt-5">
+                  <div
+                    class="col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7 d-flex justify-content-center align-items-center"
+                  >
+                    <img
+                      src="./images/products/Flagship-Tech_1600x.jpg"
+                      style="width: 90%; height: 100%; border-radius: 9px"
+                      alt="..."
+                    />
+                  </div>
+                  <div
+                    class="col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5 d-flex flex-column justify-content-center align-items-center text-center"
+                  >
+                    <h5>First slide label</h5>
+                    <p>
+                      Some representative placeholder content for the first
+                      slide.
+                    </p>
+                    <h5>$1200</h5>
+                    <div class="btn bg-danger">
+                      <a
+                        style="
                           text-decoration: none;
                           color: white;
                           font-weight: bolder;
-                        " href=""><span>Buy Now </span><i class="fa fa-cart-arrow-down"></i></a>
+                        "
+                        href=""
+                        ><span>Buy Now </span
+                        ><i class="fa fa-cart-arrow-down"></i
+                      ></a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
           </div>
+          <!-- sliding content Starts Ends -->
         </div>
-        <!-- sliding content Starts Ends -->
+      </section>
+      <!-- Slider Section Ends -->
+    </main>
+    <!-- Main Section Ends -->
+
+    <!-- Extra section 1 starts -->
+    <section
+      class="mb-5 pb-5 d-flex justify-content-center flex-column align-items-center flex-sm-column flex-md-row flex-lg-row flex-xl-row flex-xxl-row mx-auto"
+      style="width: 95%"
+    >
+      <div class="extra-img w-50">
+        <img
+          class="img-fluid"
+          src="./images/products/9eccdb3c-e965-4ab7-97d2-651c5f5a7fbe.jpg"
+          alt=""
+        />
+      </div>
+      <div
+        class="extra-text d-flex flex-column justify-content-center align-items-center text-center"
+      >
+        <h2>Lorem ipsum dolor sit.</h2>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
+          laboriosam neque id saepe totam repellendus quo? Rem in voluptas
+          vitae?
+        </p>
+        <div class="btn bg-danger">
+          <a
+            style="text-decoration: none; color: white; font-weight: bolder"
+            href=""
+            ><span>Buy Now </span><i class="fa fa-cart-arrow-down"></i
+          ></a>
+        </div>
       </div>
     </section>
-    <!-- Slider Section Ends -->
-  </main>
-  <!-- Main Section Ends -->
+    <!-- Extra section 1 Ends -->
 
-  <!-- Extra section 1 starts -->
-  <section
-    class="mb-5 pb-5 d-flex justify-content-center flex-column align-items-center flex-sm-column flex-md-row flex-lg-row flex-xl-row flex-xxl-row mx-auto"
-    style="width: 95%;">
-    <div class="extra-img w-50">
-      <img class="img-fluid" src="./images/products/9eccdb3c-e965-4ab7-97d2-651c5f5a7fbe.jpg" alt="" />
-    </div>
-    <div class="extra-text d-flex flex-column justify-content-center align-items-center text-center">
-      <h2>Lorem ipsum dolor sit.</h2>
-      <p>
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Recusandae
-        laboriosam neque id saepe totam repellendus quo? Rem in voluptas
-        vitae?
-      </p>
-      <div class="btn bg-danger">
-        <a style="text-decoration: none; color: white; font-weight: bolder" href=""><span>Buy Now </span><i
-            class="fa fa-cart-arrow-down"></i></a>
-      </div>
-    </div>
-  </section>
-  <!-- Extra section 1 Ends -->
-
-  <!-- Packegs section starts -->
-  <section class="packegs mx-auto d-grid pb-5 mb-5" style=" width: 95%;">
-  <h1 class="mx-auto pb-5">Packegs</h1>
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-4 g-5  mt-2 mx-auto">
-      <div class="col">
-        <div class="card border-0 shadow-lg" style="background-color: rgb(251, 239, 250);">
-
-          <div class="card-body">
-            <h2 class="card-title">$300</h2>
-            <h3>Most popular</h3>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.</p>
-            <p><i class="fa fa-check"></i> goforit</p>
-            <p><i class="fa fa-check"></i> goforit</p>
-            <p><i class="fa fa-check"></i> goforit</p>
-            <p><i class="fa fa-check"></i> goforit</p>
-            <p><i class="fa fa-check"></i> goforit</p>
-            <p><i class="fa fa-check"></i> goforit</p>
+    <!-- Packegs section starts -->
+    <section class="packegs mx-auto d-grid pb-5 mb-5" style="width: 95%">
+      <h1 class="mx-auto pb-5">Packegs</h1>
+      <div
+        class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-3 row-cols-xl-4 row-cols-xxl-4 g-5 mt-2 mx-auto"
+      >
+        <div class="col">
+          <div
+            class="card border-0 shadow-lg"
+            style="background-color: rgb(251, 239, 250)"
+          >
+            <div class="card-body">
+              <h2 class="card-title">$300</h2>
+              <h3>Most popular</h3>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p><i class="fa fa-check"></i> goforit</p>
+              <p><i class="fa fa-check"></i> goforit</p>
+              <p><i class="fa fa-check"></i> goforit</p>
+              <p><i class="fa fa-check"></i> goforit</p>
+              <p><i class="fa fa-check"></i> goforit</p>
+              <p><i class="fa fa-check"></i> goforit</p>
+            </div>
+            <div class="btn w-50 mb-4 mx-auto bg-danger rounded-pill">
+              <a
+                style="text-decoration: none; color: white; font-weight: bolder"
+                href=""
+                ><span>Buy Now </span><i class="fa fa-cart-arrow-down"></i
+              ></a>
+            </div>
           </div>
-          <div class="btn w-50 mb-4 mx-auto bg-danger  rounded-pill">
-          <a style="text-decoration: none; color: white; font-weight: bolder" href=""><span>Buy Now </span><i
-              class="fa fa-cart-arrow-down"></i></a>
         </div>
-        </div>
-      </div>
 
-
-
-
-      <div class="col mb-5 mt-3">
-        
-        <div class="card border-0 shadow-lg bg-primary text-white ps-4 pt-4  position-relative" style="height: 100%;">
-          <div class="togle position-absolute bg-danger rounded-pill" style="height:30px;width: 60px;text-align: center;top:-20px; right:20px;">
-          <p class="text-white mx-auto">Hot</p>
-        </div>
-          <div class="card-body ">
-            <h2 class="card-title">$300</h2>
-            <h3>Premium</h3>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.</p>
-            <p><i class="fa fa-check"></i> goforit</p>
-            <p><i class="fa fa-check"></i> goforit</p>
-            <p><i class="fa fa-check"></i> goforit</p>
-            <p><i class="fa fa-check"></i> goforit</p>
-            <p><i class="fa fa-check"></i> goforit</p>
-            <p><i class="fa fa-check"></i> goforit</p>
-            <p><i class="fa fa-check"></i> goforit</p>
+        <div class="col mb-5 mt-3">
+          <div
+            class="card border-0 shadow-lg bg-primary text-white ps-4 pt-4 position-relative"
+            style="height: 100%"
+          >
+            <div
+              class="togle position-absolute bg-danger rounded-pill"
+              style="
+                height: 30px;
+                width: 60px;
+                text-align: center;
+                top: -20px;
+                right: 20px;
+              "
+            >
+              <p class="text-white mx-auto">Hot</p>
+            </div>
+            <div class="card-body">
+              <h2 class="card-title">$300</h2>
+              <h3>Premium</h3>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p><i class="fa fa-check"></i> goforit</p>
+              <p><i class="fa fa-check"></i> goforit</p>
+              <p><i class="fa fa-check"></i> goforit</p>
+              <p><i class="fa fa-check"></i> goforit</p>
+              <p><i class="fa fa-check"></i> goforit</p>
+              <p><i class="fa fa-check"></i> goforit</p>
+              <p><i class="fa fa-check"></i> goforit</p>
+            </div>
+            <div class="btn w-50 mb-4 mx-auto bg-danger rounded-pill">
+              <a
+                style="text-decoration: none; color: white; font-weight: bolder"
+                href=""
+                ><span>Buy Now </span><i class="fa fa-cart-arrow-down"></i
+              ></a>
+            </div>
           </div>
-          <div class="btn w-50 mb-4 mx-auto bg-danger rounded-pill">
-          <a style="text-decoration: none; color: white; font-weight: bolder" href=""><span>Buy Now </span><i
-              class="fa fa-cart-arrow-down"></i></a>
         </div>
-        </div>
-      </div>
 
-
-
-      <div class="col">
-        <div class="card border-0 shadow-lg" style="background-color: rgb(255, 250, 235);">
-
-          <div class="card-body">
-            <h2 class="card-title">$300</h2>
-            <h3>Regular</h3>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.</p>
-            <p><i class="fa fa-check"></i> goforit</p>
-            <p><i class="fa fa-check"></i> goforit</p>
-            <p><i class="fa fa-check"></i> goforit</p>
-            <p><i class="fa fa-check"></i> goforit</p>
-            <p><i class="fa fa-check"></i> goforit</p>
+        <div class="col">
+          <div
+            class="card border-0 shadow-lg"
+            style="background-color: rgb(255, 250, 235)"
+          >
+            <div class="card-body">
+              <h2 class="card-title">$300</h2>
+              <h3>Regular</h3>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p><i class="fa fa-check"></i> goforit</p>
+              <p><i class="fa fa-check"></i> goforit</p>
+              <p><i class="fa fa-check"></i> goforit</p>
+              <p><i class="fa fa-check"></i> goforit</p>
+              <p><i class="fa fa-check"></i> goforit</p>
+            </div>
+            <div class="btn w-50 mb-4 mx-auto bg-danger rounded-pill">
+              <a
+                style="text-decoration: none; color: white; font-weight: bolder"
+                href=""
+                ><span>Buy Now </span><i class="fa fa-cart-arrow-down"></i
+              ></a>
+            </div>
           </div>
-          <div class="btn w-50 mb-4 mx-auto bg-danger  rounded-pill">
-          <a style="text-decoration: none; color: white; font-weight: bolder" href=""><span>Buy Now </span><i
-              class="fa fa-cart-arrow-down"></i></a>
         </div>
-        </div>
-      </div>
 
-
-      <div class="col">
-        <div class="card border-0 shadow-lg bg-light">
-
-          <div class="card-body">
-            <h2 class="card-title">$300</h2>
-            <h3>Budget</h3>
-            <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional
-              content. This content is a little bit longer.</p>
-            <p><i class="fa fa-check"></i> goforit</p>
-            <p><i class="fa fa-check"></i> goforit</p>
-            <p><i class="fa fa-check"></i> goforit</p>
-            <p><i class="fa fa-check"></i> goforit</p>
-            <p><i class="fa fa-check"></i> goforit</p>
+        <div class="col">
+          <div class="card border-0 shadow-lg bg-light">
+            <div class="card-body">
+              <h2 class="card-title">$300</h2>
+              <h3>Budget</h3>
+              <p class="card-text">
+                This is a longer card with supporting text below as a natural
+                lead-in to additional content. This content is a little bit
+                longer.
+              </p>
+              <p><i class="fa fa-check"></i> goforit</p>
+              <p><i class="fa fa-check"></i> goforit</p>
+              <p><i class="fa fa-check"></i> goforit</p>
+              <p><i class="fa fa-check"></i> goforit</p>
+              <p><i class="fa fa-check"></i> goforit</p>
+            </div>
+            <div class="btn w-50 mb-4 mx-auto bg-danger rounded-pill">
+              <a
+                style="text-decoration: none; color: white; font-weight: bolder"
+                href=""
+                ><span>Buy Now </span><i class="fa fa-cart-arrow-down"></i
+              ></a>
+            </div>
           </div>
-          <div class="btn w-50 mb-4 mx-auto bg-danger  rounded-pill">
-          <a style="text-decoration: none; color: white; font-weight: bolder" href=""><span>Buy Now </span><i
-              class="fa fa-cart-arrow-down"></i></a>
-        </div>
         </div>
       </div>
-      
-    </div>
 
-    <!-- <div class="col">
+      <!-- <div class="col">
       <div style="width: 65%; height: 50%" class="card packeg bg-primary text-light rounded-3 ps-5 pt-4 pb-4 shadow-lg">
         <div class="intro">
           <h2>$300</h2>
@@ -359,14 +482,261 @@
         </div>
       </div>
     </div> -->
-    
-  </section>
+    </section>
 
-  <!-- Packegs section Ends -->
+    <!-- Packegs section Ends -->
 
-  <!-- Scripts -->
-  <script src="./js/bootstrap.bundle.min.js"></script>
-  <script src="https://kit.fontawesome.com/7141690ecf.js" crossorigin="anonymous"></script>
-</body>
+    <!-- Faq section Starts -->
 
+    <section class="mx-auto pb-5 mb-5 pt-5" style="width: 95%; height: 500px;">
+      <div class="text-center">
+        <h1 class="mx-auto">Frequently Asked Questions (FAQ?)</h1>
+      </div>
+      <!-- Accordion section -->
+      <div
+        class="acordions d-flex justify-content-center align-items-center flex-column flex-sm-column flex-md-row flex-lg-row flex-xl-row flex-xxl-row mx-auto"
+      >
+        <div class="accordion w-50">
+          <div class="accordion accordion-flush" id="accordionFlushExample">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingOne">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseOne"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseOne"
+                >
+                  Accordion Item #1
+                </button>
+              </h2>
+              <div
+                id="flush-collapseOne"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingOne"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the <code>.accordion-flush</code> class. This is
+                  the first item's accordion body.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingTwo">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseTwo"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseTwo"
+                >
+                  Accordion Item #2
+                </button>
+              </h2>
+              <div
+                id="flush-collapseTwo"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingTwo"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the <code>.accordion-flush</code> class. This is
+                  the second item's accordion body. Let's imagine this being
+                  filled with some actual content.
+                </div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="flush-headingThree">
+                <button
+                  class="accordion-button collapsed"
+                  type="button"
+                  data-bs-toggle="collapse"
+                  data-bs-target="#flush-collapseThree"
+                  aria-expanded="false"
+                  aria-controls="flush-collapseThree"
+                >
+                  Accordion Item #3
+                </button>
+              </h2>
+              <div
+                id="flush-collapseThree"
+                class="accordion-collapse collapse"
+                aria-labelledby="flush-headingThree"
+                data-bs-parent="#accordionFlushExample"
+              >
+                <div class="accordion-body">
+                  Placeholder content for this accordion, which is intended to
+                  demonstrate the <code>.accordion-flush</code> class. This is
+                  the third item's accordion body. Nothing more exciting
+                  happening here in terms of content, but just filling up the
+                  space to make it look, at least at first glance, a bit more
+                  representative of how this would look in a real-world
+                  application.
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="btn mb-4 mx-auto bg-danger rounded-pill">
+            <a
+              style="text-decoration: none; color: white; font-weight: bolder"
+              href=""
+              ><span>Buy Now </span><i class="fa fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+        <div class="acco-pic w-50 ms-5">
+          <img
+            class="w-75"
+            src="./images/products/9eccdb3c-e965-4ab7-97d2-651c5f5a7fbe.jpg"
+            alt=""
+          />
+        </div>
+      </div>
+    </section>
+    <!-- Faq section Ends -->
+
+    <!-- Footer Section Starts -->
+    <section
+      class="footer-container d-flex align-items-center flex-column-reverse flex-sm-column-reverse bg-dark flex-md-column-reverse flex-lg-row flex-xl-row flex-xxl-row"
+      style="width: 100%;"
+    >
+      <div class="copy text-white mx-auto">
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit</p>
+      </div>
+
+      <div
+        class="appstor d-flex text-white flex-column text-center align-items-center p-3"
+      >
+        <h5 >get the app</h5>
+
+        <div
+          class="playicn d-flex border border-white  rounded bg-dark text-white mb-4 p-2"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="38"
+            height="48"
+            viewBox="0 0 48 48"
+            style="fill: #000000"
+          >
+            <linearGradient
+              id="jFdG-76_seIEvf-hbjSsaa_rZwnRdJyYqRi_gr1"
+              x1="1688.489"
+              x2="1685.469"
+              y1="-883.003"
+              y2="-881.443"
+              gradientTransform="matrix(11.64 0 0 22.55 -19615.32 19904.924)"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0" stop-color="#047ed6"></stop>
+              <stop offset="1" stop-color="#50e6ff"></stop>
+            </linearGradient>
+            <path
+              fill="url(#jFdG-76_seIEvf-hbjSsaa_rZwnRdJyYqRi_gr1)"
+              fill-rule="evenodd"
+              d="M7.809,4.608c-0.45,0.483-0.708,1.227-0.708,2.194	v34.384c0,0.967,0.258,1.711,0.725,2.177l0.122,0.103L27.214,24.2v-0.433L7.931,4.505L7.809,4.608z"
+              clip-rule="evenodd"
+            ></path>
+            <linearGradient
+              id="jFdG-76_seIEvf-hbjSsab_rZwnRdJyYqRi_gr2"
+              x1="1645.286"
+              x2="1642.929"
+              y1="-897.055"
+              y2="-897.055"
+              gradientTransform="matrix(9.145 0 0 7.7 -15001.938 6931.316)"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0" stop-color="#ffda1c"></stop>
+              <stop offset="1" stop-color="#feb705"></stop>
+            </linearGradient>
+            <path
+              fill="url(#jFdG-76_seIEvf-hbjSsab_rZwnRdJyYqRi_gr2)"
+              fill-rule="evenodd"
+              d="M33.623,30.647l-6.426-6.428v-0.45l6.428-6.428	l0.139,0.086l7.603,4.321c2.177,1.227,2.177,3.249,0,4.493l-7.603,4.321C33.762,30.561,33.623,30.647,33.623,30.647z"
+              clip-rule="evenodd"
+            ></path>
+            <linearGradient
+              id="jFdG-76_seIEvf-hbjSsac_rZwnRdJyYqRi_gr3"
+              x1="1722.978"
+              x2="1720.622"
+              y1="-889.412"
+              y2="-886.355"
+              gradientTransform="matrix(15.02 0 0 11.5775 -25848.943 10324.73)"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0" stop-color="#d9414f"></stop>
+              <stop offset="1" stop-color="#8c193f"></stop>
+            </linearGradient>
+            <path
+              fill="url(#jFdG-76_seIEvf-hbjSsac_rZwnRdJyYqRi_gr3)"
+              fill-rule="evenodd"
+              d="M33.762,30.561l-6.565-6.567L7.809,43.382	c0.708,0.761,1.9,0.847,3.232,0.103L33.762,30.561"
+              clip-rule="evenodd"
+            ></path>
+            <linearGradient
+              id="jFdG-76_seIEvf-hbjSsad_rZwnRdJyYqRi_gr4"
+              x1="1721.163"
+              x2="1722.215"
+              y1="-891.39"
+              y2="-890.024"
+              gradientTransform="matrix(15.02 0 0 11.5715 -25848.943 10307.886)"
+              gradientUnits="userSpaceOnUse"
+            >
+              <stop offset="0" stop-color="#33c481"></stop>
+              <stop offset="1" stop-color="#61e3a7"></stop>
+            </linearGradient>
+            <path
+              fill="url(#jFdG-76_seIEvf-hbjSsad_rZwnRdJyYqRi_gr4)"
+              fill-rule="evenodd"
+              d="M33.762,17.429L11.041,4.522	c-1.33-0.761-2.524-0.658-3.232,0.103l19.386,19.369L33.762,17.429z"
+              clip-rule="evenodd"
+            ></path>
+          </svg>
+          <div class="ictxt text-center">
+            <p style="margin-bottom: -3px">get on google</p>
+            <h6>Google play</h6>
+          </div>
+        </div>
+
+        <div
+          class="playicn d-flex border border-white  rounded bg-dark text-white mb-4 p-2"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            x="0px"
+            y="0px"
+            width="38"
+            height="50"
+            viewBox="0 0 50 50"
+            style="fill: #ffffff"
+          >
+            <path
+              d="M 44.527344 34.75 C 43.449219 37.144531 42.929688 38.214844 41.542969 40.328125 C 39.601563 43.28125 36.863281 46.96875 33.480469 46.992188 C 30.46875 47.019531 29.691406 45.027344 25.601563 45.0625 C 21.515625 45.082031 20.664063 47.03125 17.648438 47 C 14.261719 46.96875 11.671875 43.648438 9.730469 40.699219 C 4.300781 32.429688 3.726563 22.734375 7.082031 17.578125 C 9.457031 13.921875 13.210938 11.773438 16.738281 11.773438 C 20.332031 11.773438 22.589844 13.746094 25.558594 13.746094 C 28.441406 13.746094 30.195313 11.769531 34.351563 11.769531 C 37.492188 11.769531 40.8125 13.480469 43.1875 16.433594 C 35.421875 20.691406 36.683594 31.78125 44.527344 34.75 Z M 31.195313 8.46875 C 32.707031 6.527344 33.855469 3.789063 33.4375 1 C 30.972656 1.167969 28.089844 2.742188 26.40625 4.78125 C 24.878906 6.640625 23.613281 9.398438 24.105469 12.066406 C 26.796875 12.152344 29.582031 10.546875 31.195313 8.46875 Z"
+            ></path>
+          </svg>
+          <div class="ictxt text-center">
+            <p style="margin-bottom: -3px">get on google</p>
+            <h6>Google play</h6>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section Ends -->
+
+    <!-- Scripts -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script
+      src="https://kit.fontawesome.com/7141690ecf.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
