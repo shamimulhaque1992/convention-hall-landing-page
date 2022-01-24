@@ -6,3 +6,7 @@
     transform: scale(1.1);
     transition:.50s;
 }
+.animationsa img:hover{
+    transform: scale(1.099);
+    transition:.50s;
+}
